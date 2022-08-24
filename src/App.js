@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Carta from "./components/Carta";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Carta remetente={"Linda"} destino={"Pernambuco"} />
+      <p>
+        Estou escrevendo essa carta por causa da atividade que os alunos vão
+        fazer, okay.<br/> Não desiste, continue fazendo as atividades, treinando e
+        praticando. <br/> O céu é o limite!
+      </p>
     </div>
   );
 }
